@@ -1,0 +1,10 @@
+{
+  "feed": [
+    {
+      "author": "Barre",
+      "date": "datum",
+      "title": "Nieuws test 123",
+      "article": "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, animi! Sit ut neque velit omnis eveniet, dolorum quo, repellat ipsa illo repudiandae vitae quas, suscipit cupiditate sint itaque voluptatibus deleniti.</p>"
+    }
+  ]
+}

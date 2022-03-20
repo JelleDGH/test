@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Majadu</title>
+</head>
+<body>
+
+	<!--=======================HEADER=========================-->
+	<header class="main__header d_flex">
+
+		<!-----------------------------------HEADER LEFT------------->
+		<div class="header__left">
+			<div class="header__logo">
+				<h1><a href="index.html">Majadu</a></h1>
+			</div>
+		</div>
+
+		<!-----------------------------------HEADER MIDDLE------------->
+		<div class="header__middle">
+			<div class="header__search">
+				<input type="search" name="search" placeholder="Search">
+			</div>
+		</div>
+
+		<!-----------------------------------HEADER RIGHT------------->
+		<div class="header__right">
+			<div class="header__buttons d_flex user_online">
+				<button><i class="ri-sun-fill"></i></button>
+				<button onclick="updateLocal('status','offline'); window.location.reload()">Logout</button>
+			</div>
+		</div>
+	</header>
+
+
+
+
+	<!--=======================BANNER=========================-->
+	<main>
+		<section class="top__banner d_flex">
+
+			<!--BANNER INFO-->
+			<div class="banner_title center_text">
+				<span>Welcome in the world of</span>
+				<p>Majadu</p>
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</span>
+			</div>
+
+		</section>
+	</main>
+
+
+
+
+	<!--=======================MAIN SECTIONS=========================-->
+	<main class="main__container d_flex">
+
+		<!-----------------------------------SECTION LEFT------------->
+		<section class="section__left">
+
+			<!--LOGIN FORM SECTION-->
+			<div class="login section__left_content user_offline ">
+				<h2>Login</h2>
+				<div class="form__container d_flex ">
+					<form action="">
+						<div class="input__fields d_flex">
+							<i class="ri-shield-user-fill"></i>
+							<input type="text" name="Username" placeholder="Username" class="js_login_username">
+						</div>
+						<div class="input__fields d_flex">
+							<i class="ri-lock-fill"></i>
+							<input type="password" name="password" placeholder="Password" class="js_login_password">
+						</div>
+						<div class="submit_btn d_flex">
+							<input type="submit" name="submit" value="Login" id="login_bttn">
+							<input type="submit" name="submit" value="Signup" id="login_signup_bttn">
+							<a href="">Forgot my login?</a>
+						</div>
+						
+					</form>
+				</div>
+			</div>
+
+			<!--SIGNUP FORM SECTION-->
+			<div class="signup section__left_content ">
+				<div class="signup_container d_flex ">
+					<div class="singup_form d_flex user_offline">
+						<h2>Signup</h2>
+						<center>
+							<img src="img/gg.jpg" style="justify-content: center;width:30%;object-fit: cover;">
+						</center>
+						<form action="">
+						<!--	<div class="input__fields d_flex display">
+								<i class="ri-mail-fill"></i>
+								<input type="email" name="email" placeholder="Email adress" id="">
+							</div>-->
+							<div class="input__fields d_flex">
+								<i class="ri-shield-user-fill"></i>
+								<input type="text" name="Username" placeholder="Username" id="username_register">
+							</div>
+							<div class="input__fields d_flex">
+								<i class="ri-lock-fill"></i>
+								<input type="password" name="password" placeholder="Password" id="password_register">
+							</div>
+							<div class="input__fields d_flex">
+								<i class="ri-lock-password-fill"></i>
+								<input type="password" name="password" placeholder="Password Repeat" id="password_register_repeat">
+							</div>
+							<div class="input__fields d_flex">
+								<i class="ri-key-fill"></i>
+								<input type="text" name="token" placeholder="Token" id="register_token">
+							</div>
+
+							<div class="input__fields d_flex">
+								<i class="ri-key-fill"> Class</i>
+								<select name="class" id="class_register">
+									<option value="Caster">Caster</option>
+									<option value="Crafter">Crafter</option>
+									<option value="Alchemist">Alchemist</option>
+									<option value="Druide">Druide</option>
+								</select>
+							</div>
+							<div class="input__fields d_flex">
+								<i class="ri-key-fill"> Karma</i>
+								<select name="class" id="karma_register">
+									<option value="positive">Positive</option>
+									<option value="negative">Negative</option>
+								</select>
+							</div>
+							<div class="submit_btn d_flex">
+								<input type="submit" name="submit" value="Signup" id="signup_bttn">
+								<input type="submit" name="submit" value="Close" id="signup_close_bttn">
+							</div>
+						</form>
+					</div>
+				</div>
+				
+			</div>
+
+			<!--MENU SECTION-->
+			<div class="section__left_content user_online">
+				<h2>Inventory</h2>
+				<ul>
+					<li><a href="">Profile</a></li>
+					<li><a href="">Inventory</a></li>
+					<li><a href="">Character</a></li>
+					<li><a href="">Memberlist</a></li>
+				</ul>
+			</div>
+
+			<!--MENU SECTION-->
+			<div class="section__left_content user_online">
+				<h2>Majadu</h2>
+				<ul>
+					<li><a href="">Explore</a></li>
+					<li><a href="">Wiki</a></li>
+					<li><a href="">Online Members</a></li>
+				</ul>
+			</div>
+
+			<!--MENU SECTION-->
+			<div class="section__left_content user_online">
+				<h2>&bull; Settings</h2>
+				<ul>
+					<li><a href="index.html" onclick="Navi">My Profile</a></li>
+					<li><a href="">Notifications</a></li>
+					<li><a href="">Privacy</a></li>
+					<li><a href="" onclick="localStorage.clear()">Delete</a></li>
+				</ul>
+			</div>
+
+		</section>
+
+		<!-----------------------------------SECTION RIGHT------------->	
+		<section class="section__right">
+			<!--WELCOME BACK SECTION-->
+			<div class="section__right_content user_online" id="welcome">
+				<h2></h2>
+			</div>
+			<!--STORYLINE SECTION-->
+			<div class="section__right_content">
+				<h2>&bull; Storyline</h2>
+
+				<!--STORYLINE ARTICLE-->
+				<article class="storyline">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</article>
+
+			</div>
+
+
+			<!--LATEST NEWS ARTICLES SECTION-->
+			<div class="section__right_content ">
+				<h2>&bull; Latest News</h2>
+				<div class="latest_news_container">
+
+					<!--LATEST NEWS PREVIEW-->
+					<div class="latest_news_block°">
+						<div class="latest_news_article d_flex">
+							<span>Author</span>
+							<span>17 jun 2022</span>
+							<span class="ln-t_bg">This is a titile</span>
+							<button class="readmorebtn d_flex" onclick="articlePreview()">More <i class="ri-arrow-right-s-line"></i></button>
+						</div>
+						<div class="latest_news_article_preview">
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, animi! Sit ut neque velit omnis eveniet, dolorum quo, repellat ipsa illo repudiandae vitae quas, suscipit cupiditate sint itaque voluptatibus deleniti.</p>
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, animi! Sit ut neque velit omnis eveniet, dolorum quo, repellat ipsa illo repudiandae vitae quas, suscipit cupiditate sint itaque voluptatibus deleniti.</p>
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, animi! Sit ut neque velit omnis eveniet, dolorum quo, repellat ipsa illo repudiandae vitae quas, suscipit cupiditate sint itaque voluptatibus deleniti.</p>
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, animi! Sit ut neque velit omnis eveniet, dolorum quo, repellat ipsa illo repudiandae vitae quas, suscipit cupiditate sint itaque voluptatibus deleniti.</p>
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, animi! Sit ut neque velit omnis eveniet, dolorum quo, repellat ipsa illo repudiandae vitae quas, suscipit cupiditate sint itaque voluptatibus deleniti.</p>
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, animi! Sit ut neque velit omnis eveniet, dolorum quo, repellat ipsa illo repudiandae vitae quas, suscipit cupiditate sint itaque voluptatibus deleniti.</p>
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, animi! Sit ut neque velit omnis eveniet, dolorum quo, repellat ipsa illo repudiandae vitae quas, suscipit cupiditate sint itaque voluptatibus deleniti.</p>
+						</div>
+					</div>
+
+					<!--LATEST NEWS PREVIEW-->
+					<!--	<div class="latest_news_block°">
+                            <div class="latest_news_article d_flex">
+                                <span>Author</span>
+                                <span>17 jun 2022</span>
+                                <span class="ln-t_bg">This is a titile</span>
+                                <button class="readmorebtn d_flex" >Read more<i class="ri-arrow-right-s-line"></i></button>
+                            </div>
+                            <div class="latest_news_article_preview">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, animi! Sit ut neque velit omnis eveniet, dolorum quo, repellat ipsa illo repudiandae vitae quas, suscipit cupiditate sint itaque voluptatibus deleniti.</p>
+                            </div>
+                        </div>-->
+
+				</div>
+
+			</div>
+
+
+			<!--WHAT'S NEW SECTION-->
+			<div class="section__right_content">
+				<h2>&bull; What's New</h2>
+
+				<!--WHAT'S NEW ARTICLE-->
+				<article class="whats_new wn__bg1">
+					<h4>New In Version 2.0</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p>
+					<ul>
+						<li>&#x21e2; Added Layout</li>
+						<li>&#x21e2; New Layout</li>
+						<li>&#x21e2; Removed Layout</li>
+						<li>&#x21e2; New Layout</li>
+					</ul>
+				</article>
+
+				<!--WHAT'S NEW ARTICLE-->
+				<article class="whats_new wn__bg2">
+					<h4>New In Version 2.0</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p>
+					<ul>
+						<li>&#x21e2; Added Layout</li>
+						<li>&#x21e2; New Layout</li>
+						<li>&#x21e2; Removed Layout</li>
+						<li>&#x21e2; New Layout</li>
+					</ul>
+				</article>
+
+			</div>
+
+
+			<!--PROFILE SECTION-->
+			<div class="section__right_content user_online">
+
+				<!--TOPNAV-->
+				<div class="top_links d_flex">
+					<ul class="d_flex">
+						<li><a href="">Timeline</a></li>
+						<li><a href="">Character</a></li>
+						<li><a href="">Statistics</a></li>
+						<li><a href="">Inventory</a></li>
+						<li><a href="">LINK</a></li>
+					</ul>
+				</div>
+
+				<!--THE USER-->
+				<div class="profile_container d_flex">
+					<div class="profile_img">
+						<img src="img/profile.gif" alt="">
+					</div>
+
+					<div class="profile_user">
+						<span>Welcome, <a href="" class="js_username">Username</a></span>
+					</div>
+
+					<div class="profile_stats d_flex">
+						<span class="p_c1">ID: <p class="js_id"></p></span>
+						<span class="p_c2 ">EXP<p class="js_exp"></p></span>
+						<span class="p_c3 ">RANK<p class="js_rank"></p></span>
+						<span class="p_c4 ">STATUS<p class="js_status"></p></span>
+					</div>
+
+					<div class="profile_information d_flex">
+						<p class="js_update">My name is User and i'm from somewhere</p>
+					</div>
+				</div>
+
+				<!--UPDATE PROFILE-->
+				<div class="profile_update d_flex">
+					<textarea name="" id="updatevalue" placeholder="Update info"></textarea>
+					<button onclick="addUpdate()"><i class="ri-send-plane-2-fill"></i></button>
+				</div>
+
+			</div>
+
+
+			<!--TIMELINE SECTION-->
+			<div class="section__right_content user_online">
+
+				<div class="timeline">
+					<h4 class="center_text">Timeline</h4>
+					<div class="timeline_container">
+
+						<!--NOTE-->
+						<div class="time_stamps d_flex">
+							<span class="important_color">!</span>
+							<span>15:13</span>
+							<span>07/04/2022</span>
+							<span>Your friend is under attack</span>
+						</div>
+
+						<!--NOTE-->
+						<div class="time_stamps d_flex">
+							<span class="positive_color">+</span>
+							<span>15:13</span>
+							<span>17/04/2022</span>
+							<span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus quas sequi beatae iusto deserunt eius, similique, dignissimos quisquam nesciunt est exercitatione</span>
+						</div>
+
+						<!--NOTE-->
+						<div class="time_stamps d_flex">
+							<span class="important_color">!</span>
+							<span>15:13</span>
+							<span>15/12/2022</span>
+							<span>Your under attack</span>
+						</div>
+
+						<!--NOTE-->
+						<div class="time_stamps d_flex">
+							<span class="warning_color">-</span>
+							<span>15:13</span>
+							<span>15/12/2022</span>
+							<span>You have been fired by you clan</span>
+						</div>
+
+						<!--NOTE-->
+						<div class="time_stamps d_flex">
+							<span class="positive_color">+</span>
+							<span>15:13</span>
+							<span>15/12/2022</span>
+							<span>You have been added to the clan</span>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			
+
+			<!--STATICS SECTION-->
+			<div class="section__right_content user_online">
+				<div class="statics_container">
+
+					<!--USERSTATS-->
+					<div class="user_statics">
+						<h4 class="center_text js_username">User</h4>
+
+						<table>
+							<tr>
+								<th>ID</th>
+								<th>Name</th>
+								<th>Rank</th>
+								<th>Class</th>
+								<th>Gold</th>
+								<th>Location</th>
+							</tr>
+							<tr>
+								<td class="js_id">2</td>
+								<td class="js_username">Jack</td>
+								<td class="js_rank">Creator</td>
+								<td class="js_class">Caster</td>
+								<td class="js_gold">456</td>
+								<td class="js_location">Yakura</td>
+							</tr>
+						</table>
+					</div>
+
+					<!--CHARSTATS-->
+					<div class="character_statics">
+						<h4 class="center_text">Character Statics</h4>
+						<table>
+							<tr>
+								<th>Level</th>
+								<th>Exp</th>
+								<th>HP</th>
+								<th>Attack</th>
+								<th>Defence</th>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>0</td>
+								<td>75</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+						</table>
+					</div>
+
+					<!--TOTALSTATICS-->
+					<div class="total_statics">
+						<h4 class="center_text">Total Statics</h4>
+						<table>
+							<tr>
+								<th>Winnings</th>
+								<th>Losses</th>
+								<th>Karma</th>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>7</td>
+								<td class="js_karma">7</td>
+							</tr>
+						</table>
+					</div>
+
+				</div>
+			</div>
+
+			<!--INVENTORY SECTION-->
+			<div class="section__right_content user_online">
+				<div class="inventory_container">
+					<h4 class="center_text">inventory</h4>
+
+					<div class="item_container d_flex">
+
+						<!--ITEM-->
+						<div class="item d_flex">
+							<div class="item_preview d_flex">
+								<span><img src="img/item.png" alt=""></span>
+							</div>
+							<div class="item_desc d_flex">
+								<span>candle</span>
+							</div>
+							<div class="item_buttons d_flex">
+								<button>use</button>
+								<button>sell</button>
+							</div>
+						</div>
+
+						<!--ITEM-->
+						<div class="item d_flex">
+							<div class="item_preview d_flex">
+								<span><img src="img/item2.png" alt=""></span>
+							</div>
+							<div class="item_desc d_flex">
+								<span>candle</span>
+							</div>
+							<div class="item_buttons d_flex">
+								<button>use</button>
+								<button>sell</button>
+							</div>
+						</div>
+
+						<!--ITEM-->
+						<div class="item d_flex">
+							<div class="item_preview d_flex">
+								<span><img src="img/item3.png" alt=""></span>
+							</div>
+							<div class="item_desc d_flex">
+								<span>candle</span>
+							</div>
+							<div class="item_buttons d_flex">
+								<button>use</button>
+								<button>sell</button>
+							</div>
+						</div>
+
+						<!--ITEM-->
+						<div class="item d_flex">
+							<div class="item_preview d_flex">
+								<span><img src="img/item4.png" alt=""></span>
+							</div>
+							<div class="item_desc d_flex">
+								<span>candle</span>
+							</div>
+							<div class="item_buttons d_flex">
+								<button>use</button>
+								<button>sell</button>
+							</div>
+						</div>
+
+						<!--ITEM-->
+						<div class="item d_flex">
+							<div class="item_preview d_flex">
+								<span><img src="img/item3.png" alt=""></span>
+							</div>
+							<div class="item_desc d_flex">
+								<span>candle</span>
+							</div>
+							<div class="item_buttons d_flex">
+								<button>use</button>
+								<button>sell</button>
+							</div>
+						</div>
+
+						<!--ITEM-->
+						<div class="item d_flex">
+							<div class="item_preview d_flex">
+								<span><img src="img/item3.png" alt=""></span>
+							</div>
+							<div class="item_desc d_flex">
+								<span>candle</span>
+							</div>
+							<div class="item_buttons d_flex">
+								<button>use</button>
+								<button>sell</button>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</section>
+
+	</main>
+
+
+
+
+	<!--=======================FOOTER=========================-->
+	<footer class="footer center_text">
+        <ul>
+            <li><a href="">Developers</a></li>
+            <li><a href="">Wiki</a></li>
+            <li><a href="">Terms of Service</a></li>
+            <li><a href="">Cookie Policy</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        <p>Made with <i class="ri-heart-fill"></i> by <a href=""> AlienCode</a> </p>
+    </footer>
+
+	<script src="./js/main.js"></script>
+	<script src="./js/article.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "members": [
+    {
+      "username": "Hanuman",
+      "token": "MpkWSjewKy",
+      "rank": 5,
+      "class_type": "",
+      "speciality": "",
+      "karma": "",
+      "experience": 0,
+      "max_experience": 1500,
+      "gold": 100,
+      "shop_name": ""
+    },
+    {
+      "username": "Martian",
+      "token": "juBuNDzJLG",
+      "rank": 1,
+      "class_type": "",
+      "speciality": "",
+      "karma": "",
+      "experience": 0,
+      "max_experience": 1500,
+      "gold": 100,
+      "shop_name": ""
+    }
+  ]
+}
